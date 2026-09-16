@@ -1,0 +1,11 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double yard;
+    cin >> yard;
+    cout << fixed << setprecision(1);
+    cout << yard << "yard = " << yard * 91.44 << "cm" << endl;
+    return 0;
+}
