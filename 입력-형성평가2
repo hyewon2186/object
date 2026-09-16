@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "80.5 + 22.34 = 102.84" << endl;
+    return 0;
+}
