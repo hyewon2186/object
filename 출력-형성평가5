@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "          Seoul     10,312,545        +91,375" << endl;
+    cout << "          Pusan      3,567,910         +5,868" << endl;
+    cout << "        Incheon      2,758,296        +64,888" << endl;
+    cout << "          Daegu      2,511,676        +17,230" << endl;
+    cout << "        Gwangju      1,454,636        +29,774" << endl;
+    return 0;
+}
