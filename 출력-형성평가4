@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "kor 90" << endl;
+    cout << "mat 80" << endl;
+    cout << "eng 100" << endl;
+    cout << "sum 270" << endl;
+    return 0;
+}
