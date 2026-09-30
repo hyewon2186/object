@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int mh, mw;
+    int kh, kw;
+
+    scanf("%d %d", &mh, &mw);
+    scanf("%d %d", &kh, &kw);
+
+    printf("%d", (mh > kh) && (mw > kw));
+
+    return 0;
+}
