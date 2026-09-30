@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+    cin >> month;
+
+    switch (month) {
+        case 2:
+            cout << 28 << endl;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            cout << 30 << endl;
+            break;
+        default:
+            cout << 31 << endl;
+            break;
+    }
+    return 0;
+}
