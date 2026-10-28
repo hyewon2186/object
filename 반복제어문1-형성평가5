@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double width, height;
+    char answer;
+
+    do {
+        cin >> width >> height;
+
+        cout << fixed << setprecision(1);
+        cout << "Triangle width = " << width * height / 2 << '\n';
+
+        cout << "Continue? ";
+        cin >> answer;
+
+    } while (answer == 'Y' || answer == 'y');
+
+    return 0;
+}
