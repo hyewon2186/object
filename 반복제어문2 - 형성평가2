@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+
+    int start = (a < b) ? a : b;
+    int end = (a > b) ? a : b;
+
+    for (int i = start; i <= end; i++) {
+        cout << i;
+
+        if (i < end) {
+            cout << " ";
+        }
+    }
+
+    cout << '\n';
+    return 0;
+}
