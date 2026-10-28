@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int odd = 0, even = 0;
+
+    while (true) {
+        cin >> n;
+
+        if (n == 0) {
+            break;
+        }
+
+        if (n % 2 == 0) {
+            even++;
+        } else {
+            odd++;
+        }
+    }
+
+    cout << "odd : " << odd << '\n';
+    cout << "even : " << even << '\n';
+
+    return 0;
+}
