@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+    int count = 0;
+
+    while (cin >> n) {
+        if (n < 0 || n > 100) {
+            break;
+        }
+
+        sum += n;
+        count++;
+    }
+
+    cout << "sum : " << sum << '\n';
+
+    if (count > 0) {
+        cout << fixed << setprecision(1);
+        cout << "avg : " << (double)sum / count << '\n';
+    }
+
+    return 0;
+}
