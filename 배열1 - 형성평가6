@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int num;
+    int count = 0;
+    int sum = 0;
+    double avg;
+
+    while (true) {
+        cin >> num;
+
+        if (num == 0) {
+            break;
+        }
+
+        if (num % 5 == 0) {
+            count++;
+            sum += num;
+        }
+    }
+
+    avg = (double)sum / count;
+
+    cout << "Multiples of 5 : " << count << endl;
+    cout << "sum : " << sum << endl;
+    cout << fixed << setprecision(1);
+    cout << "avg : " << avg << endl;
+
+    return 0;
+}
