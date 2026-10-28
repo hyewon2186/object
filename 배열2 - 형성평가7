@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[4][2];
+    int total = 0;
+    int colSum[2] = {0, 0};
+
+    // 배열 입력받기
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+            total += arr[i][j];
+            colSum[j] += arr[i][j];
+        }
+    }
+
+    // 가로 평균 출력
+    for (int i = 0; i < 4; i++) {
+        cout << (arr[i][0] + arr[i][1]) / 2 << " ";
+    }
+    cout << endl;
+
+    // 세로 평균 출력
+    for (int j = 0; j < 2; j++) {
+        cout << colSum[j] / 4 << " ";
+    }
+    cout << endl;
+
+    // 전체 평균 출력
+    cout << total / 8 << endl;
+
+    return 0;
+}
